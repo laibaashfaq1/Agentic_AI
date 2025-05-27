@@ -15,7 +15,7 @@ Click on Get a Gemini API Key Button
 Click Create API key
 
 # Open AI Agents SDK
-Open AI Agents SDK
+To learn more about the OpenAI SDK, check out [openaisdk](https://openai.github.io/openai-agents-python/)
 
 # Install UV
 Go to the  start menu and type Powershell
