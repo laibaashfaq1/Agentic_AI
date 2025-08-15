@@ -1,0 +1,11 @@
+[project]
+name = "class-6"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "load-dotenv>=0.1.0",
+    "openai-agents>=0.2.3",
+    "rich>=14.1.0",
+]
