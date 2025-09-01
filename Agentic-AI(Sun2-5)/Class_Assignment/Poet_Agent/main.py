@@ -1,5 +1,5 @@
 from agents import Agent, Runner, trace
-from connection import connfig 
+from connection import config 
 import asyncio
 
 # POet Agent - generates or processes poems
@@ -69,3 +69,28 @@ parent_agent = CustomParentAgent(
         """,
     handoffs = [poet_agent, lyric_analyst_agent, narrative_analyst_agent, dramatic_analyst_agent],
 )
+
+#Runner
+
+async def main():
+    with trace("Handsoff Homework Full Example"):
+        #change krni ha yh poetry 
+        poem_or_query = """
+        The sun set in crimson fire,
+        My heart aches with lost desire.
+
+        In silent shadows, I remain,
+        whispering dreams in falling rain. 
+"""
+        result = await Runner.run(
+            parent_agent,
+            poem_or_query,
+            run_config = config
+        )
+        print("--- Final Output ---")
+        print(result.final_output)
+        print("--- Last Agent ---")
+        print(result.last_agent.name)
+
+if __name__ == "__main__":
+    asyncio.run(main())

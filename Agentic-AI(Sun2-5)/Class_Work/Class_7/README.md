@@ -28,7 +28,7 @@ Monitor and adjust AI responses to ensure safe, accurate, and ethical outputs.
 
 
 <!-- Input GuardRails -->
-Exercise # 1 Objective: Make a agent and make an input guardrail trigger. Prompt: I want to change my class timings 😭😭 Outcome: After running the above prompt an InputGuardRailTripwireTriggered in except should be called. See the outcome in LOGS
+Exercise # 1 Objective: Make an agent and make an input guardrail trigger. Prompt: I want to change my class timings 😭😭 Outcome: After running the above prompt an InputGuardRailTripwireTriggered in except should be called. See the outcome in LOGS
 
 Exercise # 2 Objective: Make a father agent and father guardrail. The father stopping his child to run below 26C.
 
